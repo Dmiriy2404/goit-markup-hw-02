@@ -1,0 +1,194 @@
+/* GENERAL STYLES */
+:root {
+    --first-font: 'Roboto',sans-serif;
+    --second-font: "Raleway", sans-serif;
+    --main-letter-spacing: 0.03em;
+    --accent-color: #2196F3;
+    --main-color: #212121;
+    --second-color: #757575;
+    --main-white-color: #FFFFFF;
+    --logo-black-color: #000000;
+}
+body {
+    font-family: var(--first-font);
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--main-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.btn {
+    cursor: pointer;
+}
+.btn:hover,
+.btn:focus {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+}
+
+/* LOGO */
+.logo-first,
+.logo-last {
+    font-family: var(--second-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-color);
+}
+
+.logo-last {
+    color: var(--logo-black-color);
+}
+/* HEADER */
+/* .header-nav {}
+
+.header-nav-lsit {}
+.header-nav-item {} */
+
+.header-link {
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.active-page {
+    color: var(--accent-color);
+}
+/* .header-contacts-lsit {}
+
+.header-contacts-item {} */
+
+.header-mail-link,
+.header-tel-link {
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+}
+/* HERO */
+.hero {
+    background-color: #2F303A;
+}
+.hero-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--main-white-color);
+}
+
+.hero-btn {
+    font-family: var(--first-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+}
+/* BENEFITS */
+.benefits-title-item{
+    font-weight: 700;
+    line-height: 1.18;
+    text-transform: uppercase;
+}
+.benefits-text-item {
+    font-weight: 400;
+    line-height: 1.71;
+    color: var(--second-color);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* PRODUCTS */
+.products-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+
+}
+/* TEAM */
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+.team-name {
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+.team-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    color: var(--second-color);
+}
+/* FOOTER */
+.footer{
+    background-color: #2F303A;
+}
+
+.footer-mail,
+.footer-tel,
+.footer-address {
+    font-weight: 400;
+    line-height: 1.71;    
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-address {
+    color: var(--main-white-color);
+}
+
+/* ПОРТОФЛІО */
+
+.webnav-btn {
+    font-family: var(--first-font);
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: var(--main-letter-spacing);
+    color: var(--main-color);
+    background-color: #F5F4FA;
+}
+.webnaw-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.webnaw-products {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;    
+    color: #757575;
+}
