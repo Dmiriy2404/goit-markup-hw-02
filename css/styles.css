@@ -1,20 +1,22 @@
 /* GENERAL STYLES */
 :root {
-    --first-font: 'Roboto',sans-serif;
-    --second-font: "Raleway", sans-serif;
-    --main-letter-spacing: 0.03em;
+    --first-font: 'Roboto', sans-serif;
+    --second-font: 'Raleway', sans-serif;
     --accent-color: #2196F3;
-    --main-color: #212121;
-    --second-color: #757575;
+    --main-text-color: #212121;
+    --second-text-color: #757575;
     --main-white-color: #FFFFFF;
+    --body-background-color:#F5F5F5;
+    --first-background-color: #2F303A;
+    --second-background-color:#F5F4FA;
     --logo-black-color: #000000;
+    --footer-address-color: rgba(255, 255, 255, 0.6);
+    --color-action-btn: #188ce8;
 }
 body {
     font-family: var(--first-font);
     font-weight: 500;
-    font-size: 14px;
-    letter-spacing: var(--main-letter-spacing);
-    color: var(--main-color);
+    color: var(--body-background-color);
 }
 
 .list {
@@ -32,24 +34,25 @@ body {
 .btn {
     cursor: pointer;
 }
-.btn:hover,
-.btn:focus {
-    color: var(--main-white-color);
-    background-color: var(--accent-color);
-}
+
 
 /* LOGO */
 .logo-first,
-.logo-last {
+.logo-last,
+.footer-logo-last {
     font-family: var(--second-font);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
+    letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 
 .logo-last {
     color: var(--logo-black-color);
+}
+.footer-logo-last {
+    color: var(--main-white-color);
 }
 /* HEADER */
 /* .header-nav {}
@@ -58,9 +61,10 @@ body {
 .header-nav-item {} */
 
 .header-link {
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-color);
+    color: var(--main-text-color);
 }
 .active-page {
     color: var(--accent-color);
@@ -71,13 +75,14 @@ body {
 
 .header-mail-link,
 .header-tel-link {
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--second-color);
+    color: var(--second-text-color);
 }
 /* HERO */
 .hero {
-    background-color: #2F303A;
+    background-color: var(--first-background-color);
 }
 .hero-title {
     font-weight: 900;
@@ -101,16 +106,25 @@ body {
     color: var(--main-white-color);
     background-color: var(--accent-color);
 }
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--color-action-btn);
+}
 /* BENEFITS */
 .benefits-title-item{
     font-weight: 700;
-    line-height: 1.18;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--main-text-color);
 }
 .benefits-text-item {
     font-weight: 400;
+    font-size: 14px;
     line-height: 1.71;
-    color: var(--second-color);
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
 }
 .visually-hidden {
     position: absolute;
@@ -132,64 +146,91 @@ body {
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
 
 }
 /* TEAM */
+.team {
+    background: var(--second-background-color);
+}
+
 .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
 }
+
+      
+
 .team-name {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
 }
 .team-position {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
-    color: var(--second-color);
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
 }
 /* FOOTER */
 .footer{
-    background-color: #2F303A;
+    background-color: var(--first-background-color);
 }
 
 .footer-mail,
 .footer-tel,
 .footer-address {
     font-weight: 400;
-    line-height: 1.71;    
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--footer-address-color);
+    
 }
 
 .footer-address {
     color: var(--main-white-color);
+    font-style: normal;
 }
 
 /* ПОРТОФЛІО */
 
 .webnav-btn {
     font-family: var(--first-font);
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: var(--main-letter-spacing);
-    color: var(--main-color);
-    background-color: #F5F4FA;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    background-color: var(--second-background-color);
 }
+.webnav-btn:hover,
+.webnav-btn:focus {
+    color: var(--main-white-color);
+    background-color: var(--accent-color);
+}
+    
 .webnaw-title {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color: var(--main-text-color);
 }
 .webnaw-products {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.88;    
-    color: #757575;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
 }
